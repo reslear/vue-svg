@@ -1,5 +1,8 @@
 # vue-svg [![npm version](https://badge.fury.io/js/vue-cli-plugin-svg.svg)](https://badge.fury.io/js/vue-cli-plugin-svg) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
+this is temp fork!
+original: https://github.com/FedorSherbakov/vue-svg
+
 _Super simple svg loading module for Vue.js_
 
 (actual npm package is [vue-cli-plugin-svg](https://www.npmjs.com/package/vue-cli-plugin-svg))
@@ -77,8 +80,8 @@ _Inline as an actual svg element using `vue-svg-loader`_
 
   export default {
     components: {
-      VueLogo
-    }
+      VueLogo,
+    },
   };
 </script>
 ```
@@ -116,9 +119,9 @@ module.exports = {
       inline: {}, // Pass options to vue-svg-loader
       data: {}, // Pass options to url-loader
       sprite: {}, // Pass options to svg-sprite-loader
-      external: {} // Pass options to file-loader
-    }
-  }
+      external: {}, // Pass options to file-loader
+    },
+  },
 };
 ```
 
@@ -133,9 +136,9 @@ module.exports = {
   pluginOptions: {
     svg: {
       // You can change this
-      inline: { resourceQuery: /inline/ }
-    }
-  }
+      inline: { resourceQuery: /inline/ },
+    },
+  },
 };
 ```
 
